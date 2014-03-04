@@ -26,4 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_galaxy5.mk
+    $(LOCAL_DIR)/omni_galaxy5.mk

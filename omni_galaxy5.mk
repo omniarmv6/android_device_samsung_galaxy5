@@ -15,10 +15,17 @@
 # Inherit device specific files
 $(call inherit-product, device/samsung/galaxy5/device_galaxy5.mk)
 
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 # Overrides
-PRODUCT_NAME := full_galaxy5
+PRODUCT_NAME := omni_galaxy5
 PRODUCT_DEVICE := galaxy5
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-I5500
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_CHARACTERISTICS := phone
+
+PRODUCT_RELEASE_NAME := Galaxy5
+PRODUCT_VERSION_DEVICE_SPECIFIC := -GT-I5500
